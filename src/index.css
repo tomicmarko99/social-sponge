@@ -32,3 +32,10 @@ code {
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
 }
+
+#home {
+  background-image: url("./assets/hero_background.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
