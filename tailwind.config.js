@@ -7,6 +7,7 @@ module.exports = {
       turbo: "#FFCB1A",
       gold_tips: "#E2B22B",
       night_rider: "#323232",
+      grey: "#787878",
     },
     screens: {
       md: "891px",

@@ -21,3 +21,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar__galssmorphism {
+  background: rgba(190, 190, 190, 0.15);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}

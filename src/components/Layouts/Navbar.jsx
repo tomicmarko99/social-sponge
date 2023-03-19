@@ -8,8 +8,8 @@ const Navbar = () => {
     setToggle(!toggle);
   };
   return (
-    <nav className="w-full px-[20px] py-[26px] flex justify-center">
-      <div className="text-[12px] text-night_rider font-[500] tracking-[0.05rem] max-w-[1680px] w-full flex justify-between items-center gap-5">
+    <nav className="text-[12px] text-night_rider font-[500] w-full px-[20px] py-[26px] flex justify-center">
+      <div className="tracking-[0.05rem] max-w-[1680px] w-full flex justify-between items-center gap-5">
         <a href="/">
           <img
             src={Logo}
@@ -18,9 +18,7 @@ const Navbar = () => {
           />
         </a>
         <div className="space-x-[40px] hidden md:block">
-          <a href="/" className="">
-            HOME
-          </a>
+          <a href="/">HOME</a>
           <a href="/">CONTACT</a>
           <a href="/">FAQ</a>
           <a href="/">EN</a>
@@ -35,16 +33,40 @@ const Navbar = () => {
         </div>
         <button
           onClick={() => handleToggle()}
-          className="text-xl block md:hidden"
+          className={`text-xl block md:hidden active:rotate-180 ${styles.transitions}`}
         >
           {toggle ? (
-            <i className="fa-solid fa-bars-staggered"></i>
+            <i class="fa-solid fa-bars"></i>
           ) : (
-            <i className="fa-solid fa-xmark"></i>
+            <i class="fa-solid fa-x"></i>
           )}
         </button>
       </div>
-      <div className=""></div>
+      <div
+        className={`fixed md:hidden top-0 ${
+          toggle ? "-right-[150%]" : "right-0"
+        } w-full h-screen ${
+          styles.transitions
+        } ease-linear flex justify-end gap-3 shadow-md`}
+      >
+        <div
+          className="w-full h-screen navbar__galssmorphism"
+          onClick={() => handleToggle()}
+        ></div>
+        <div className="absolute w-[70%] bg-[#fff] h-full px-[20px] py-[29px]">
+          <div className="flex justify-end pb-2 border-b-[1px]">
+            <button onClick={() => handleToggle()} className="text-xl">
+              <i class="fa-solid fa-x"></i>
+            </button>
+          </div>
+          <div className="flex flex-col gap-3">
+            <a href="/">HOME</a>
+            <a href="/">CONTACT</a>
+            <a href="/">FAQ</a>
+            <a href="/">EN</a>
+          </div>
+        </div>
+      </div>
     </nav>
   );
 };
