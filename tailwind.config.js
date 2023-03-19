@@ -8,7 +8,7 @@ module.exports = {
       gold_tips: "#E2B22B",
       night_rider: "#323232",
       eclipse: "#3E3E3E",
-      grey: "#787878",
+      grey: "#777777",
       light_grey: "#e5e7eb",
     },
     screens: {

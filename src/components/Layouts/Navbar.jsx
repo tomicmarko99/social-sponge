@@ -41,11 +41,9 @@ const Navbar = () => {
         </button>
       </div>
       <div
-        className={`fixed md:hidden top-0 ${
-          toggle ? "-right-[150%]" : "right-0"
-        } w-full h-screen ${
-          styles.transitions
-        } ease-linear flex justify-end gap-3 shadow-md`}
+        className={`fixed md:hidden top-0 ${toggle ? "-right-[150%]" : "right-0"
+          } w-full h-screen ${styles.transitions
+          } ease-linear flex justify-end gap-3 shadow-md`}
       >
         <div
           className="w-full h-screen navbar__galssmorphism"

@@ -1,3 +1,4 @@
+import Disclaimer from "./components/Disclaimer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Layouts/Navbar";
 
@@ -6,6 +7,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      <Disclaimer />
     </>
   );
 }
