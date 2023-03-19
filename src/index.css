@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --sunglow: #fed340;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -38,4 +42,24 @@ code {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.center-title::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 70px;
+  background-color: var(--sunglow);
+  margin-top: 7px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left-title::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 70px;
+  background-color: var(--sunglow);
+  margin-top: 7px;
 }
