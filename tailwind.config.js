@@ -12,7 +12,7 @@ module.exports = {
       light_grey: "#e5e7eb",
     },
     screens: {
-      md: "891px",
+      md: "920px",
     },
     extend: {},
   },

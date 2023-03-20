@@ -1,14 +1,54 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../../assets/SocialSponge Logo.png";
 import styles from "../../styles/Styles";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(true);
+  const [color, setColor] = useState("");
+  const [scroll, setScroll] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+
   const handleToggle = () => {
     setToggle(!toggle);
   };
+
+  useEffect(() => {
+    const changeColor = () => {
+      if (window.scrollY >= 15) {
+        setColor("#fff");
+        setScroll(true);
+      } else {
+        setColor("");
+        setScroll(false);
+      }
+    };
+    window.addEventListener("scroll", changeColor);
+  }, []);
+
+  // Initialize IntersectionObserver when component is loaded
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    },
+    { rootMargin: "-50% 0px -50% 0px" }
+  );
+
+  // Find sections with observer
+  const sections = document.querySelectorAll("section");
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
   return (
-    <nav className="text-[12px] text-night_rider font-[500] w-full px-[20px] py-[26px] fixed flex justify-center">
+    <nav
+      style={{ backgroundColor: color }}
+      className={`text-[12px] text-night_rider font-[500] w-full px-[20px] fixed flex justify-center ${
+        scroll ? "py-[10px] shadow-md" : "py-[26px]"
+      } ${styles.transitions}`}
+    >
       <div className="tracking-[0.05rem] max-w-[1680px] w-full flex justify-between items-center gap-5">
         <a href="/">
           <img
@@ -18,9 +58,28 @@ const Navbar = () => {
           />
         </a>
         <div className="space-x-[40px] hidden md:block">
-          <a href="#home">HOME</a>
-          <a href="/">CONTACT</a>
-          <a href="/">FAQ</a>
+          <a
+            href="#home"
+            className={
+              activeSection === "home" || "disclaimer" || "howitworks"
+                ? "font-[700]"
+                : null
+            }
+          >
+            HOME
+          </a>
+          <a
+            href="#contact"
+            className={activeSection === "contact" ? "font-[700]" : null}
+          >
+            CONTACT
+          </a>
+          <a
+            href="#faq"
+            className={activeSection === "faq" ? "font-[700]" : null}
+          >
+            FAQ
+          </a>
           <a href="/">EN</a>
         </div>
         <div className="space-x-[20px] hidden md:block">
@@ -41,9 +100,11 @@ const Navbar = () => {
         </button>
       </div>
       <div
-        className={`fixed md:hidden top-0 ${toggle ? "-right-[150%]" : "right-0"
-          } w-full h-screen ${styles.transitions
-          } ease-linear flex justify-end gap-3 shadow-md`}
+        className={`fixed md:hidden top-0 ${
+          toggle ? "-right-[150%]" : "right-0"
+        } w-full h-screen ${
+          styles.transitions
+        } ease-linear flex justify-end gap-3 shadow-md`}
       >
         <div
           className="w-full h-screen navbar__galssmorphism"
@@ -56,9 +117,28 @@ const Navbar = () => {
             </button>
           </div>
           <div className="flex mb-5 flex-col gap-3">
-            <a href="#home">HOME</a>
-            <a href="/">CONTACT</a>
-            <a href="/">FAQ</a>
+            <a
+              href="#home"
+              className={
+                activeSection === "home" || "disclaimer" || "howitworks"
+                  ? "font-[700]"
+                  : null
+              }
+            >
+              HOME
+            </a>
+            <a
+              href="#contact"
+              className={activeSection === "contact" ? "font-[700]" : null}
+            >
+              CONTACT
+            </a>
+            <a
+              href="#faq"
+              className={activeSection === "faq" ? "font-[700]" : null}
+            >
+              FAQ
+            </a>
             <a href="/">EN</a>
           </div>
           <div className="flex flex-col gap-3 py-5 border-y-2 border-light_grey">
