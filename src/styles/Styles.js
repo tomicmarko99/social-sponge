@@ -1,4 +1,6 @@
 const styles = {
+  section_container:
+    "w-full  bg-white px-[20px] py-[80px] md:py-[115px] flex flex-col items-center justify-center",
   navbar__button:
     "tracking-[0.05rem] px-[30px] py-[12px] rounded-full bg-sunglow hover:bg-turbo active:bg-gold_tips transition-colors duration-200",
   button:

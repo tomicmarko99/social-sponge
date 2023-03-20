@@ -45,7 +45,7 @@ const Navbar = () => {
   return (
     <nav
       style={{ backgroundColor: color }}
-      className={`text-[12px] text-night_rider font-[500] w-full px-[20px] fixed flex justify-center ${
+      className={`text-[12px] text-night_rider font-[500] w-full px-[20px] fixed flex justify-center z-10 ${
         scroll ? "py-[10px] shadow-md" : "py-[26px]"
       } ${styles.transitions}`}
     >
@@ -60,11 +60,7 @@ const Navbar = () => {
         <div className="space-x-[40px] hidden md:block">
           <a
             href="#home"
-            className={
-              activeSection === "home" || "disclaimer" || "howitworks"
-                ? "font-[700]"
-                : null
-            }
+            className={activeSection === "home" ? "font-[700]" : null}
           >
             HOME
           </a>
@@ -119,11 +115,7 @@ const Navbar = () => {
           <div className="flex mb-5 flex-col gap-3">
             <a
               href="#home"
-              className={
-                activeSection === "home" || "disclaimer" || "howitworks"
-                  ? "font-[700]"
-                  : null
-              }
+              className={activeSection === "home" ? "font-[700]" : null}
             >
               HOME
             </a>
