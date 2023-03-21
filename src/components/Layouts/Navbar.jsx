@@ -45,7 +45,7 @@ const Navbar = () => {
   return (
     <nav
       style={{ backgroundColor: color }}
-      className={`text-[12px] text-night_rider font-[500] w-full px-[20px] fixed flex justify-center z-10 ${
+      className={`text-[12px] text-night_rider font-[500] w-full px-[20px] fixed flex justify-center z-50 ${
         scroll ? "py-[10px] shadow-md" : "py-[26px]"
       } ${styles.transitions}`}
     >

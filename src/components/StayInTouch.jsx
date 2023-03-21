@@ -8,7 +8,7 @@ const StayInTouch = () => {
     <section id="home" className={styles.section_container}>
       <div className="text-night_rider text-center w-full max-w-[474px] flex flex-col items-center">
         <h2 className={`center-title ${styles.small_title} mb-[20px]`}>
-          REVIEWS
+          STAY IN TOUCH
         </h2>
         <p className="text-[14px] font-[500] mb-[60px]">
           Be in direct communication with your job giver.
@@ -18,13 +18,21 @@ const StayInTouch = () => {
         <p className="text-[18px] font-[500]">
           Comming soon on both platforms...
         </p>
-        <div className="flex gap-[40px] mt-[30px]">
-          <button className={`p-[16px] rounded-xl ${styles.button}`}>
+        <div className="flex flex-col md:flex-row gap-[20px] md:gap-[40px] mt-[30px]">
+          <a
+            href="#"
+            target="_blank"
+            className={`p-[16px] rounded-xl ${styles.button}`}
+          >
             <img src={Google} alt="" />
-          </button>
-          <button className={`p-[16px] rounded-xl ${styles.button}`}>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            className={`p-[16px] rounded-xl ${styles.button}`}
+          >
             <img src={Store} alt="" />
-          </button>
+          </a>
         </div>
       </div>
     </section>

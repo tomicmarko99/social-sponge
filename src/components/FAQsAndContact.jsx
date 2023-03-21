@@ -1,0 +1,38 @@
+import React from "react";
+import styles from "../styles/Styles";
+import Accordion from "./widgets/Accordion";
+import faqs from "../data/faqs.json";
+
+const FAQsAndContact = () => {
+  const faqsLength = faqs.length;
+  return (
+    <section className={styles.section_container}>
+      <div
+        className={`text-night_rider max-w-[1680px] w-full md:px-[145px] ${styles.transitions}`}
+      >
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-[130px]">
+          <div>
+            <h2 className={`left-title ${styles.small_title} mb-[43px]`}>
+              FREQUENTLY ASKED QUESTIONS
+            </h2>
+            {faqs.map((faq, i) => {
+              let no = i + 1;
+              return (
+                <Accordion
+                  key={i}
+                  no={no}
+                  question={faq.question}
+                  answer={faq.answer}
+                  length={faqsLength}
+                />
+              );
+            })}
+          </div>
+          <div>FORM</div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default FAQsAndContact;

@@ -1,4 +1,5 @@
 import Disclaimer from "./components/Disclaimer";
+import FAQsAndContact from "./components/FAQsAndContact";
 import Hero from "./components/Hero";
 import HowItWorks from "./components/HowItWorks";
 import Navbar from "./components/Layouts/Navbar";
@@ -18,6 +19,7 @@ function App() {
       <Reviews />
       <WhyChoseSP />
       <StayInTouch />
+      <FAQsAndContact />
     </>
   );
 }
