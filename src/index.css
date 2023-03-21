@@ -26,9 +26,8 @@ code {
     monospace;
 }
 
-:focus {
-  outline: none !important;
-  box-shadow: none !important;
+button {
+  -webkit-tap-highlight-color: transparent;
 }
 
 .navbar__galssmorphism {
