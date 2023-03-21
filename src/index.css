@@ -43,7 +43,7 @@ code {
   -webkit-backdrop-filter: blur(1px);
 }
 
-#home {
+.hero {
   background-image: url("./assets/hero_background.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -70,6 +70,13 @@ code {
 
 .reviews__container {
   background-image: url("./assets/Bubbles.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wcsp {
+  background-image: url("./assets/bg2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -5,9 +5,11 @@ import ReviewCard from "./widgets/ReviewCard";
 
 const Reviews = () => {
   return (
-    <section className={styles.section_container}>
-      <div className="text-night_rider max-w-[1680px] w-full md:px-[145px] flex flex-col items-center ${styles.transitions}">
-        <div className="max-w-[1080px] text-center mb-[89px] md:mb-[129px]">
+    <section id="home" className={`reviews ${styles.section_container}`}>
+      <div
+        className={`text-night_rider max-w-[1680px] w-full md:px-[145px] flex flex-col items-center ${styles.transitions}`}
+      >
+        <div className="max-w-[1080px] text-center  mb-[20px] md:mb-[112px]">
           <h2 className={`center-title ${styles.small_title} mb-[20px]`}>
             REVIEWS
           </h2>
@@ -20,11 +22,12 @@ const Reviews = () => {
             experience and find the best match for you and your home.
           </p>
         </div>
-        <div className="reviews__container w-full flex justify-center">
+        <div className="reviews__container w-full py-[114px] flex justify-center">
           <div className="text-[14px] w-full max-w-[1080px] mx-center grid grid-cols-1 md:grid-cols-2 gap-x-[30px] gap-y-[69px]">
-            {ReviewsList.map((review) => {
+            {ReviewsList.map((review, i) => {
               return (
                 <ReviewCard
+                  key={i}
                   avatar={review.avatar}
                   name={review.user}
                   recension={review.recension}

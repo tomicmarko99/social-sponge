@@ -6,7 +6,7 @@ import Stars from "../assets/stars.svg";
 
 const HowItWorks = () => {
   return (
-    <section className={styles.section_container}>
+    <section id="home" className={styles.section_container}>
       <div className="text-night_rider max-w-[1080px] w-full flex flex-col gap-5 items-center">
         <h2 className={`center-title ${styles.small_title}`}>HOW IT WORKS</h2>
         <div className="w-full mt-[42px] md:mt-[62px] lg:px-[145px] grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-[90px]">
