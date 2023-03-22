@@ -7,7 +7,7 @@ import ContactForm from "./widgets/ContactForm";
 const FAQsAndContact = () => {
   const faqsLength = faqs.length;
   return (
-    <section id="faq" className={styles.section_container}>
+    <section className={styles.section_container}>
       <div
         className={`text-night_rider max-w-[1680px] w-full md:px-[145px] ${styles.transitions}`}
       >

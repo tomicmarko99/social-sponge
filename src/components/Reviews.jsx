@@ -23,7 +23,7 @@ const Reviews = () => {
           </p>
         </div>
         <div className="reviews__container w-full py-[10px] md:py-[114px] flex justify-center">
-          <div className="text-[14px] w-full max-w-[1080px] mx-center grid grid-cols-1 md:grid-cols-2 gap-x-[30px] gap-y-[69px]">
+          <div className="text-[14px] w-full max-w-[1080px] mx-center grid grid-cols-1 cd:grid-cols-2 gap-x-[30px] gap-y-[69px]">
             {ReviewsList.map((review, i) => {
               return (
                 <ReviewCard

@@ -10,10 +10,12 @@ module.exports = {
       eclipse: "#3E3E3E",
       grey: "#777777",
       light_grey: "#e5e7eb",
+      very_light_grey: "#F1F1F1",
       cloud: "#DDDDDD66",
     },
     screens: {
       md: "920px",
+      cd: "1086px",
     },
     extend: {},
   },

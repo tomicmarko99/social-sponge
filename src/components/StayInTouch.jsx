@@ -20,18 +20,21 @@ const StayInTouch = () => {
         </p>
         <div className="flex flex-col md:flex-row gap-[20px] md:gap-[40px] mt-[30px]">
           <a
-            href="#"
+            href="/"
             target="_blank"
             className={`p-[16px] rounded-xl ${styles.button}`}
           >
-            <img src={Google} alt="" />
+            <img
+              src={Google}
+              alt="Download Social Spogne App from Google Play"
+            />
           </a>
           <a
-            href="#"
+            href="/"
             target="_blank"
             className={`p-[16px] rounded-xl ${styles.button}`}
           >
-            <img src={Store} alt="" />
+            <img src={Store} alt="Download Social Spogne App from App Store" />
           </a>
         </div>
       </div>
