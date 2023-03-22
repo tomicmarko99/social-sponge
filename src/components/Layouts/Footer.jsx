@@ -55,7 +55,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="text-[12px] text-center cd:text-right mt-[50px]">
-            <p>&copy;Copyright 2021 SocialSponge, All rights reserved.</p>
+            <p>Copyright &copy; 2023 SocialSponge, All rights reserved.</p>
           </div>
         </div>
       </div>
