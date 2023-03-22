@@ -21,20 +21,20 @@ const Hero = () => {
             You decide when and who you
             <br /> want to clean your appartment.
           </p>
-          <div className="text-[14px] text-eclipse font-[400] flex flex-col gap-[16px]">
-            <div className="flex gap-[20px]">
+          <ul className="text-[14px] text-eclipse font-[400] flex flex-col gap-[16px]">
+            <li className="flex gap-[20px]">
               <img src={Check} alt="" />
               <p>Create tasks</p>
-            </div>
-            <div className="flex gap-[20px]">
+            </li>
+            <li className="flex gap-[20px]">
               <img src={Check} alt="" />
               <p>Hire right cleaning professionals</p>
-            </div>
-            <div className="flex gap-[20px]">
+            </li>
+            <li className="flex gap-[20px]">
               <img src={Check} alt="" />
               <p>Track your cleaning schedule</p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
