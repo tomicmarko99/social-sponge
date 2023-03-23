@@ -63,7 +63,7 @@ const ContactForm = () => {
           type="submit"
           className={`font-[600] px-[20px] py-[11px] flex gap-[80px] w-full cd:w-auto justify-between items-center ${styles.button}`}
         >
-          Send us a message{" "}
+          Send us a message
           <img
             src={Arrow}
             alt="Send us a message > Arrow icon"
