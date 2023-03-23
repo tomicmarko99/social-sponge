@@ -22,6 +22,7 @@ const StayInTouch = () => {
           <a
             href="/"
             target="_blank"
+            rel="noreferrer"
             className={`p-[16px] rounded-xl ${styles.button}`}
           >
             <img
@@ -32,6 +33,7 @@ const StayInTouch = () => {
           <a
             href="/"
             target="_blank"
+            rel="noreferrer"
             className={`p-[16px] rounded-xl ${styles.button}`}
           >
             <img src={Store} alt="Download Social Spogne App from App Store" />
