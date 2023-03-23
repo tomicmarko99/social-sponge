@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="text-grey font-[400] tracking-[.05em] bg-very_light_grey w-full px-[20px] py-[55px] flex justify-center">
       <div className="max-w-[1680px] w-full grid grid-cols-1 md:grid-cols-4 gap-[50px] md:gap-[100px]">
         <div className="text-[12px] md:col-span-1 flex flex-col justify-start gap-[21px]">
-          <img src={Logo} alt="" className="max-w-[150px]" />
+          <img src={Logo} alt="Social Sponge Logo" className="max-w-[150px]" />
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat

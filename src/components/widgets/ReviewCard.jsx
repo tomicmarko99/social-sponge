@@ -19,7 +19,7 @@ const ReviewCard = ({ avatar, name, recension, location, jobs, sponges }) => {
           {location} | {jobs} finished jobs
         </p>
         <div>
-          <img src={sponges} alt="" />
+          <img src={sponges} alt="Rate" />
         </div>
       </div>
     </div>

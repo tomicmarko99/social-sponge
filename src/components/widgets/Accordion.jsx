@@ -35,9 +35,9 @@ const Accordion = ({ no, question, answer, length }) => {
             )}
             <div className="text-[8px] z-10 font-[600] w-[29px] h-[29px] flex justify-center items-center bg-sunglow rounded-full">
               {open ? (
-                <img src={Minus} alt="" className="w-auto" />
+                <img src={Minus} alt="Close" className="w-auto" />
               ) : (
-                <img src={Plus} alt="" className="w-auto" />
+                <img src={Plus} alt="Open" className="w-auto" />
               )}
             </div>
           </button>

@@ -53,7 +53,7 @@ const Navbar = () => {
         <a href="/">
           <img
             src={Logo}
-            alt="Social Sponge"
+            alt="Social Sponge Logo"
             className={`max-h-[35px] md:max-h-[55px] ${styles.transitions}`}
           />
         </a>

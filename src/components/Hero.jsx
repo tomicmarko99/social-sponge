@@ -23,15 +23,15 @@ const Hero = () => {
           </p>
           <ul className="text-[14px] text-eclipse font-[400] flex flex-col gap-[16px]">
             <li className="flex gap-[20px]">
-              <img src={Check} alt="" />
+              <img src={Check} alt="Check mark" />
               <p>Create tasks</p>
             </li>
             <li className="flex gap-[20px]">
-              <img src={Check} alt="" />
+              <img src={Check} alt="Check mark" />
               <p>Hire right cleaning professionals</p>
             </li>
             <li className="flex gap-[20px]">
-              <img src={Check} alt="" />
+              <img src={Check} alt="Check mark" />
               <p>Track your cleaning schedule</p>
             </li>
           </ul>

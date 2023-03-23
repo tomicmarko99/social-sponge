@@ -27,7 +27,7 @@ const WhyChoseSP = () => {
           <div className="text-eclipse mt-[72px] flex flex-col gap-[30px]">
             <div>
               <div className="flex gap-[20px] mb-[6px]">
-                <img src={Check} alt="" />
+                <img src={Check} alt="Check mark" />
                 <p className="text-[18px] font-[500]">
                   Customer focused reviews
                 </p>
@@ -39,7 +39,7 @@ const WhyChoseSP = () => {
             </div>
             <div>
               <div className="flex gap-[20px] mb-[6px]">
-                <img src={Check} alt="" />
+                <img src={Check} alt="Check mark" />
                 <p className="text-[18px] font-[500]">We are committed</p>
               </div>
               <div className="text-grey tracking-[0.05em]">
@@ -49,7 +49,7 @@ const WhyChoseSP = () => {
             </div>
             <div>
               <div className="flex gap-[20px] mb-[6px]">
-                <img src={Check} alt="" />
+                <img src={Check} alt="Check mark" />
                 <p className="text-[18px] font-[500]">
                   Regular and monthly cleaning
                 </p>

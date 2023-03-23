@@ -11,7 +11,7 @@ const HowItWorks = () => {
         <h2 className={`center-title ${styles.small_title}`}>HOW IT WORKS</h2>
         <ul className="w-full mt-[42px] md:mt-[62px] lg:px-[145px] grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-[90px]">
           <li className={styles.hiw_card}>
-            <img src={Location} alt="" className="h-[94px]" />
+            <img src={Location} alt="Location icon" className="h-[94px]" />
             <p className={`mt-[50px] mb-[25px] ${styles.small_title}`}>
               Enter your location
             </p>
@@ -20,7 +20,7 @@ const HowItWorks = () => {
             </p>
           </li>
           <li className={styles.hiw_card}>
-            <img src={Date} alt="" className="h-[94px]" />
+            <img src={Date} alt="Date icon" className="h-[94px]" />
             <p className={`mt-[50px] mb-[25px] ${styles.small_title}`}>
               Pick a desired date
             </p>
@@ -29,7 +29,7 @@ const HowItWorks = () => {
             </p>
           </li>
           <li className={styles.hiw_card}>
-            <img src={Stars} alt="" className="h-[94px]" />
+            <img src={Stars} alt="Stars icon" className="h-[94px]" />
             <p className={`mt-[50px] mb-[25px] ${styles.small_title}`}>
               Enjoy your free time
             </p>
