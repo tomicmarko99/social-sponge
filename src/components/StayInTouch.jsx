@@ -5,7 +5,7 @@ import Store from "../assets/app-store.png";
 
 const StayInTouch = () => {
   return (
-    <section id="home" className={styles.section_container}>
+    <section className={styles.section_container}>
       <div className="text-night_rider text-center w-full max-w-[474px] flex flex-col items-center">
         <h2 className={`center-title ${styles.small_title} mb-[20px]`}>
           STAY IN TOUCH

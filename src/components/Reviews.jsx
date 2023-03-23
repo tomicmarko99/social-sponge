@@ -5,7 +5,7 @@ import ReviewCard from "./widgets/ReviewCard";
 
 const Reviews = () => {
   return (
-    <section id="home" className={`reviews ${styles.section_container}`}>
+    <section className={`reviews ${styles.section_container}`}>
       <div
         className={`text-night_rider max-w-[1680px] w-full md:px-[145px] flex flex-col items-center ${styles.transitions}`}
       >

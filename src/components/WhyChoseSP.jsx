@@ -4,7 +4,7 @@ import Check from "../assets/check_mark.svg";
 
 const WhyChoseSP = () => {
   return (
-    <section id="home" className={`wcsp ${styles.section_container}`}>
+    <section className={`wcsp ${styles.section_container}`}>
       <div
         className={`text-night_rider max-w-[1680px] w-full md:px-[145px] ${styles.transitions}`}
       >

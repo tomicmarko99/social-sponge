@@ -6,9 +6,9 @@ import Navbar from "./components/Layouts/Navbar";
 import Reviews from "./components/Reviews";
 import StayInTouch from "./components/StayInTouch";
 import WhyChoseSP from "./components/WhyChoseSP";
-import Carousel from "./components/widgets/Carousel";
 import Footer from "./components/Layouts/Footer";
 import JumpToTop from "./components/Layouts/JumpToTop";
+import AsignTasks from "./components/AsignTasks";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <Hero />
       <Disclaimer />
       <HowItWorks />
-      <Carousel />
+      <AsignTasks />
       <Reviews />
       <WhyChoseSP />
       <StayInTouch />
