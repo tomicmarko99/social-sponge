@@ -87,7 +87,7 @@ const Carousel = () => {
       </div>
 
       <div className="text-[12px] md:text-[36px] text-[#fff] font-[500] w-full py-[5px] md:py-[25px] px-[20px] absolute -translate-y-[100%] flex justify-center">
-        <div className="max-w-[1680px] w-full md:px-[145px] flex flex-col gap-[5px] md:gap-[20px]">
+        <div className="max-w-[1680px] w-full md:px-[145px] flex flex-col gap-[10px] md:gap-[20px]">
           <div className="w-full flex justify-between items-center">
             <div>
               {currentIndexFormatted}/

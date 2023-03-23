@@ -8,6 +8,7 @@ import StayInTouch from "./components/StayInTouch";
 import WhyChoseSP from "./components/WhyChoseSP";
 import Carousel from "./components/widgets/Carousel";
 import Footer from "./components/Layouts/Footer";
+import JumpToTop from "./components/Layouts/JumpToTop";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <WhyChoseSP />
       <StayInTouch />
       <FAQsAndContact />
+      <JumpToTop />
       <Footer />
     </>
   );
