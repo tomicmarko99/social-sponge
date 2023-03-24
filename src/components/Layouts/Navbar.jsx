@@ -115,29 +115,42 @@ const Navbar = () => {
           <div className="flex mb-5 flex-col gap-3">
             <a
               href="#home"
+              onClick={() => handleToggle()}
               className={activeSection === "home" ? "font-[700]" : null}
             >
               HOME
             </a>
             <a
               href="#contact"
+              onClick={() => handleToggle()}
               className={activeSection === "contact" ? "font-[700]" : null}
             >
               CONTACT
             </a>
             <a
               href="#faq"
+              onClick={() => handleToggle()}
               className={activeSection === "faq" ? "font-[700]" : null}
             >
               FAQ
             </a>
-            <a href="/">EN</a>
+            <a href="/" onClick={() => handleToggle()}>
+              EN
+            </a>
           </div>
           <div className="flex flex-col gap-3 py-5 border-y-2 border-light_grey">
-            <button className="tracking-[0.05rem] px-[28px] py-[10px] border-2 rounded-full">
+            <button
+              onClick={() => handleToggle()}
+              className="tracking-[0.05rem] px-[28px] py-[10px] border-2 rounded-full"
+            >
               Login
             </button>
-            <button className={`${styles.navbar__button}`}>REGISTER</button>
+            <button
+              onClick={() => handleToggle()}
+              className={`${styles.navbar__button}`}
+            >
+              REGISTER
+            </button>
           </div>
         </div>
       </div>
